@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/poli.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Daniel Gonzalez Juarez</h2>   
+        <p>Nacido en Toluca y formado en la UTVT, Egresado como TSU Tecnologias de la Infromacion</p>
+        <p>Soy estudiante de Ingineria de Redes Inteligentes y Ciberseguridad, Realice la estadia en la FGJ con sede en lerma, en la Area de analisis de homicidios.</p>
+    </div>
+</div>
+{% endblock %}
